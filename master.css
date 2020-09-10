@@ -65,7 +65,7 @@ header {
 }
 .content p{
   color: white;
-
+  text-align: center;
 }
 .logo {
   position: relative;
@@ -299,10 +299,43 @@ nav {
 #cssmenu>ul ul>li.has-sub>ul>li.active>a {
   border-top: 1px solid #333
 }
+.grid {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 4rem;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #181818;
+
+  border-radius: 25px;
+  box-shadow: 3px 2px 6px 0px #191919;
+}
+
+.grid > article img {
+  margin-top: 5%;
+  margin-left: 25%;
+  max-width: 50%;
+  height: 150px;
+  width: 150px;;
+  border-radius: 50%;
+}
+
+.grid .text h3 {
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+}
+.grid .text p {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
 @media screen and (max-width: 1000px){
-  .content h2{
-    margin-left: 40%;
-  }
+
   .image{
     width: 100%;
   }
@@ -324,6 +357,7 @@ nav {
 
 }
 @media screen and (max-width:800px) {
+
   .content{
     font-size: 1rem;
   }
