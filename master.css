@@ -28,9 +28,9 @@ header {
 
 .homeimage h1{
   position: absolute;
-  top: 35%;
+  top: 8.3em;
   left: 25%;
-  font-size: 2.6rem;
+  font-size: 3.4vw;
   color: white
 }
 .image{
@@ -47,6 +47,11 @@ header {
   padding-bottom: 50%;
   max-width: 100%;
 
+}
+.heading{
+  margin:4%;
+  font-size: 1.6rem;
+  color: white;
 }
 .content{
   margin-top: 15%;
@@ -316,7 +321,7 @@ nav {
 
 .grid > article img {
   margin-top: 5%;
-  margin-left: 25%;
+
   max-width: 50%;
   height: 150px;
   width: 150px;;
@@ -334,8 +339,79 @@ nav {
   text-align: center;
   margin-bottom: 2rem;
 }
-@media screen and (max-width: 1000px){
 
+ .grid1 {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 4rem;
+  align-items: stretch;
+}
+
+.grid1 > article {
+  border: 1px solid #181818;
+
+  box-shadow: 3px 2px 6px 0px #191919;
+}
+
+.grid1 > article img {
+  margin: 5%;
+
+  max-width: 100%;
+
+
+}
+
+.grid1 .text h3 {
+  color: red;
+  margin-top: 0.5rem;
+  margin-left: 6.4%;
+}
+ .grid1 .text p {
+  color: white;
+  margin-left: 6.4%;
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+}
+.grid1 .text a{
+  color:red;
+
+  float: right;
+
+}
+.contact{
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.contact h4{
+  margin-left: 4rem;
+    color: red;
+}
+.contact p{
+  margin-top: 1.4rem;
+  margin-left: 4rem;
+  margin-bottom: 5rem;
+  color:white;
+}
+.contact img{
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  float: right;
+}
+#discord{
+  float: right;
+  margin-right: 5rem;
+}
+@media screen and (max-width: 1000px){
+  #discord{
+    margin-left: 2rem;
+    margin: 1rem;
+    margin-right: 5rem;
+    width: 80%;
+    flex-direction: column;
+  }
   .image{
     width: 100%;
   }
@@ -350,6 +426,7 @@ nav {
     float:left;
   }
 }
+
 @media screen and (min-width: 801px) {
   #cssmenu ul{
     display:block !important;
@@ -358,8 +435,12 @@ nav {
 }
 @media screen and (max-width:800px) {
 
+
+  .contact{
+    font-size: 1.3rem;
+  }
   .content{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .logo {
     position: absolute;
