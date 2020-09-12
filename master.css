@@ -296,52 +296,55 @@ nav {
   border-top: 1px solid #333
 }
 .grid {
-  margin: 3rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 4rem;
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(300px , 300px));
+  grid-gap: 6rem;
+  align-items: center;
 }
 
 .grid > article {
+  height: 350px;
+  width: 300px;
   border: 1px solid #1a1a1a;
-color: #1a1a1a;
+  background-color: #1a1a1a;
   border-radius: 25px;
   box-shadow: 3px 2px 6px 0px #191919;
 }
 
 .grid > article img {
-  margin-top: 5%;
-
-  max-width: 50%;
-  height: 150px;
-  width: 150px;;
+  margin-top: 18%;
+  max-width: 55%;
   border-radius: 50%;
 }
 
 .grid .text h3 {
   color: white;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 .grid .text p {
-  color: red;
-  margin-top: 1rem;
+  color: #f10000;
+  margin-top: 2%;
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
  .grid1 {
   margin: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px,300px));
   grid-gap: 4rem;
   align-items: stretch;
 }
 
 .grid1 > article {
-  border: 1px solid #181818;
-
+  height: 350px;;
+  border: 1px solid #1a1a1a;
+  background-color: #1a1a1a;
+  border-radius: 25px;
   box-shadow: 3px 2px 6px 0px #191919;
 }
 
@@ -354,21 +357,32 @@ color: #1a1a1a;
 }
 
 .grid1 .text h3 {
-  color: red;
-  margin-top: 0.5rem;
-  margin-left: 6.4%;
+  font-size: 2.2rem;
+  color:#fff;
+  margin-top: 2rem;
+  margin-left: 10%;
+  text-align: left;
 }
  .grid1 .text p {
   color: white;
-  margin-left: 6.4%;
-  margin-top: 0.3rem;
+  margin-left: 10%;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  text-align: left;
 }
 .grid1 .text a{
   color:red;
-
   float: right;
+  margin-right: 10%;
 
+}
+.label{
+}
+.label:after{
+  content:'Creative';
+}
+.label:hover:after{
+  content:'Secretary'; 
 }
 .contact{
   display: inline-flex;
@@ -376,14 +390,16 @@ color: #1a1a1a;
   font-size: 1.5rem;
 }
 .contact h4{
-  margin-left: 4rem;
+  margin-left: 10rem;
     color: red;
+    font-size: 1.2rem;
 }
 .contact p{
   margin-top: 1.4rem;
-  margin-left: 4rem;
+  margin-left: 10rem;
   margin-bottom: 5rem;
   color:white;
+  font-size: 1.2rem;
 }
 .contact img{
   display: inline-flex;
@@ -393,13 +409,25 @@ color: #1a1a1a;
 }
 #discord{
   float: right;
-  margin-right: 5rem;
+  margin-right: 10rem;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e10000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 10px 150px #111;
+  border-radius: 2px;
 }
 @media screen and (max-width: 1000px){
   #discord{
     margin-left: 2rem;
     margin: 1rem;
     margin-right: 5rem;
+    margin-top: 2rem;
     width: 80%;
     flex-direction: column;
   }
