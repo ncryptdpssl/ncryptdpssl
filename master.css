@@ -471,7 +471,7 @@ iframe{
   border-radius: 2px;
 }
 .sticky {
-
+  z-index: 10;
   position: fixed;
 
 
