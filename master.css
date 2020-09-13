@@ -40,11 +40,11 @@ header {
   display: inline-block;
   z-index: -199;
   width: 50vw;
-  height: 100vh;
+  height: 40vh;
 }
 .image img{
   margin-top: 15%;
-  padding-bottom: 50%;
+  padding-bottom: 20%;
   max-width: 100%;
 
 }
@@ -298,17 +298,53 @@ nav {
   border-top: 1px solid #333
 }
 .grid {
+  margin-left: 6rem;
   justify-content: center;
-
+  margin-right: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px , 300px));
-  grid-gap: 5rem;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.grid2{
+  margin-left: 6rem;
+  justify-content: center;
+  margin-right: 6rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 3rem;
   align-items: center;
 }
-
+.grid2 >article{
+  height: 100%;
+  width: 100%;
+  border: 1px solid #1a1a1a;
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  box-shadow: 3px 2px 6px 0px #191919;
+}
+.grid2 > article img{
+  margin-top: 18%;
+  max-width: 55%;
+  border-radius: 50%;
+}
+.grid2 .text h3 {
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+}
+.grid2 .text p {
+  color: #f10000;
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
 .grid > article {
-  height: 350px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
+
   border: 1px solid #1a1a1a;
   background-color: #1a1a1a;
   border-radius: 25px;
@@ -335,10 +371,10 @@ nav {
 }
 
  .grid1 {
-  margin: 3rem;
+  margin: 10rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px,300px));
+  grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 4rem;
   align-items: stretch;
 }
@@ -359,9 +395,13 @@ nav {
 
 }
 .see a{
-  margin-top: auto;
+
+}
+.grid1 .text{
+    display: grid;
 }
 .grid1 .text h3 {
+  margin:0;
   font-size: 2.2rem;
   color:#fff;
   margin-top: 2rem;
@@ -376,9 +416,10 @@ nav {
   text-align: left;
 }
 .grid1 .text a{
+
   color:red;
   float: right;
-  margin-right: 10%;
+
 
 }
 .label{
@@ -438,6 +479,21 @@ iframe{
   display: inline;
 }
 @media screen and (max-width: 1000px){
+  .grid2, .grid, .grid1{
+
+    margin-left: 0;
+justify-content: center;
+
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px , 300px));
+grid-gap: 5rem;
+align-items: center;
+}
+hr{
+  visibility: hidden;
+
+  display: block !important;
+}
   #member h2{
     margin-top: 10px;
   }
@@ -454,11 +510,11 @@ iframe{
   .content p{
     margin-right:10px;
   }
-  .grid1, .grid{
+  .grid1, .grid, .grid2{
     justify-content: center;
     margin: 0;
   }
-  .grid1 article, .grid article{
+  .grid1 article, .grid article, .grid2 article{
     width:100%;
 
   }
