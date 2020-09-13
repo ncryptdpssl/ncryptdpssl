@@ -1,51 +1,5 @@
 
-#scrollPath{
-  position: fixed;
-  top: 10;
-  width: 100%;
-  height: 5px;
 
-  background: rgba(255,255,255, 0.05);
-}
-#progressbar{
-  position: fixed;
-  top: 10;
-  left: 0;
-
-  height: 5px;
-  background: linear-gradient(to right, #008aff, #00ff37);
-  animation: animate 5s linear infinite;
-}
-@keyframes animate {
-  0%. 100%{
-    filter: hue-rotate(0deg);
-  }
-  50%{
-    filter: hue-rotate(360deg);
-  }
-}
-#progressbar:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-    background: linear-gradient(to top, #008aff, #00ff37);
-    filter: blur(10px);
-
-}
-#progressbar:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 100%;
-    background: linear-gradient(to top, #008aff, #00ff37);
-    filter: blur(30px);
-
-}
 @font-face {
   font-family: 'Red Hat Display', sans-serif;
 }
@@ -344,11 +298,11 @@ nav {
   border-top: 1px solid #333
 }
 .grid {
-  margin-left: 12rem;
-  margin-right: 12rem;
+  justify-content: center;
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px , 300px));
-  grid-gap: 6rem;
+  grid-gap: 5rem;
   align-items: center;
 }
 
@@ -383,6 +337,7 @@ nav {
  .grid1 {
   margin: 3rem;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(300px,300px));
   grid-gap: 4rem;
   align-items: stretch;
@@ -403,7 +358,9 @@ nav {
 
 
 }
-
+.see a{
+  margin-top: auto;
+}
 .grid1 .text h3 {
   font-size: 2.2rem;
   color:#fff;
@@ -477,28 +434,62 @@ iframe{
 
 }
 
-
+#member{
+  display: inline;
+}
 @media screen and (max-width: 1000px){
-  #discord{
-    margin-left: 2rem;
-    margin: 1rem;
-    margin-right: 5rem;
-    margin-top: 2rem;
-    width: 80%;
-    flex-direction: column;
+  #member h2{
+    margin-top: 10px;
+  }
+  .text{
+    display: block;
+  }
+  .homeimage{
+    margin-top: 20px;
+  }
+  html, body{
+    overflow-x: hidden;
+
+  }
+  .content p{
+    margin-right:10px;
+  }
+  .grid1, .grid{
+    justify-content: center;
+    margin: 0;
+  }
+  .grid1 article, .grid article{
+    width:100%;
+
+  }
+  iframe {
+
+    margin: 0;
+
+    justify-content: center;
+
+    width: 100%;
   }
   .image{
     width: 100%;
+    height: auto;
   }
   .image img{
     margin:0;
     padding: 0;
     max-width: 90%;
   }
-  .content{
+  .content, .contact p, .contact h4{
     max-width:100%;
     margin:0;
+    margin-bottom: 10px;
     float:left;
+  }
+  .contact h4{
+    margin-top: 1rem;
+  }
+  .contact p{
+    margin-bottom: 1rem;
   }
 }
 
@@ -526,9 +517,7 @@ iframe{
     padding: 10px 10px;
     float: none;
   }
-  .text{
-    display: none;
-  }
+
   .logo2 {
     display: none;
   }
