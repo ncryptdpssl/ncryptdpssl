@@ -305,9 +305,9 @@ nav {
   border-top: 1px solid #333
 }
 .grid {
-  margin-left: 10rem;
+  margin-left: 19rem;
   justify-content: center;
-  margin-right: 10rem;
+  margin-right: 19rem;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-gap: 3rem;
@@ -315,9 +315,9 @@ nav {
   margin-bottom: 2rem;
 }
 .grid2{
-  margin-left: 12rem;
+  margin-left: 14rem;
   justify-content: center;
-  margin-right: 12rem;
+  margin-right: 14rem;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 3rem;
@@ -360,7 +360,7 @@ nav {
 
 .grid > article img {
   margin-top: 18%;
-  max-width: 55%;
+  max-width: 53%;
   border-radius: 50%;
 }
 
@@ -421,10 +421,10 @@ nav {
   color: white;
   margin-right: 10%;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 10%;
   margin-top: 0.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: left;
 }
 .grid1 .text a{
@@ -468,6 +468,7 @@ nav {
 iframe{
   float: right;
   margin-right: 10rem;
+  margin-bottom: 3rem;
 }
 ::-webkit-scrollbar {
   width: 5px;
