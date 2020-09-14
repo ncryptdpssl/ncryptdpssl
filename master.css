@@ -34,10 +34,24 @@ header {
 
 .homeimage h1{
   position: absolute;
-  top:7em;
+  top:6em;
   left: 25%;
   font-size: 3.4vw;
   color: white
+}
+.homeimage p{
+  width: 40%;
+  position: absolute;
+  top: 23em;
+  left: 25%;
+  font-size: 1.2vw;
+  color: white
+}
+.homeimage a{
+ 
+  color: #f10000;
+  font-size: 1.2vw;
+  text-decoration: underline;
 }
 .image{
   color:white;
@@ -47,9 +61,10 @@ header {
   height: 40vh;
 }
 .image img{
-  margin-top: 15%;
+  margin-top: 20%;
   padding-bottom: 20%;
-  max-width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
 
 }
 .heading{
@@ -66,9 +81,10 @@ header {
   flex-direction: column;
   float: right;
   margin-right:5%;
-  max-width: 38%;
+  max-width: 35%;
   font-size: 1.2rem;
   padding: 10px;
+  margin-top: 8%;
 }
 .content h2{
   font-size: 4rem;
@@ -80,6 +96,7 @@ header {
   color: white;
   text-align: left;
   margin-top: 40px;
+  font-size: 1.2vw;
 }
 .logo {
   position: relative;
@@ -108,6 +125,7 @@ nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  z-index: 1;
 
 }
 
@@ -146,7 +164,6 @@ nav {
       float:right;
 
 }
-
 #cssmenu>ul>li>a {
   text-decoration: none;
   color: #fff;
@@ -226,6 +243,8 @@ nav {
   transition: all .25s ease
 }
 
+  
+
 #cssmenu ul ul li:hover {}
 
 #cssmenu li:hover>ul {
@@ -250,6 +269,12 @@ nav {
   color: #ddd;
   font-weight: 400;
 }
+#cssmenu ul ul li a.btn {
+  color: #ddd;
+  background-color: #e10000;
+ 
+}
+
 
 #cssmenu ul ul li:last-child>a,
 #cssmenu ul ul li.last-item>a {
@@ -303,6 +328,20 @@ nav {
 #cssmenu>ul>li.has-sub>ul>li.active>a,
 #cssmenu>ul ul>li.has-sub>ul>li.active>a {
   border-top: 1px solid #333
+}
+button{
+  background-color: #f10000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20%;
+  margin-left: -20%;
+  cursor: pointer;
+  border-radius: 10px;
 }
 .grid {
   margin-left: 19rem;
@@ -420,10 +459,10 @@ nav {
  .grid1 .text p {
   color: white;
   margin-right: 10%;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   margin-left: 10%;
-  margin-top: 0.6rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -491,7 +530,7 @@ iframe{
 #member{
   display: inline;
 }
-@media screen and (min-width: 1200px){
+@media screen and (max-width: 1200px){
   .content{
       margin-top: 10%;
   }
@@ -521,6 +560,9 @@ hr{
   }
   .homeimage{
     margin-top: 20px;
+  }
+  .homeimage img{
+    display: none;
   }
   html, body{
     overflow-x: hidden;
