@@ -9,19 +9,22 @@
   <link rel="stylesheet" href="master.css">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
   <body>
-    <header id="myHeader">
+    <header id="myHeader" class="sticky">
       <nav id='cssmenu'>
         <div class="logo"><img class="logo" src=log.png>
         </div>
         <div id="head-mobile"></div>
         <div class="button"></div>
         <ul>
-          <li class='active'><a href='#home'>Home</a></li>
+          <li><a href='#home'>Home</a></li>
           <li><a href='#about'>About</a></li>
           <li><a href='#events'>Events</a></li>
           <li><a href='team.html'>Members</a></li>
           <li><a href='#contact'>Contact</a></li>
+          <li><button onclick="alert('coming soon');">Register</button></li>
+          
         </ul>
+        
       </nav>
 
     </header>
@@ -29,15 +32,18 @@
     <div class="homeimage" id="home">
         <img src="land.svg" alt="" >
         <div id="hometext">
-              <h1 id="homehead">Lorem Ipsum</h1>
+              <h1 id="homehead">nCrpyt 2020</h1>
+              <p>DPS Sushant Lok's annual technology symposium is back, and it promises to be bigger and better than ever.
+              Get the invite <a href="https://mackeja.design/">here</a></p>
         </div>
+        <button class="not_visible" onclick="alert('coming soon');">Register</button>
     </div>
     <div class="about">
       <div class="content"id="about">
-        <h2>about Us</h2><br><br>
+        <h2>about us</h2><br><br>
        <p>We are the IT Club of Delhi Public School, Sushant Lok. “Unparalleled by birth, insane by choice” is the motto we strive by as we succeed as one of the top IT Clubs in Gurgaon. nCrypt was founded in 2011 and since then has been guided by the amazing faculty of the school, whose support is one of the primary reasons for our maturing as team.
         </p>
-        <svg height="110" width="400">
+        <svg height="110" width="300">
           <line x1="0" y1="100" x2="500" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
         </svg>
       </div>
@@ -55,18 +61,19 @@
 
 
 
-      <main class="grid1">
+      <main class="grid1 floating">
 
         <article>
           <center>
 
           <div class="text">
-            <h3>Event 1</h3>
+            <h3>Code-In</h3>
 
-            <p> Lorem ipsum dolor sit amet,incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate vel.</p>
-          <div class="see">
-            <a href="#">See more.</a>
-           </div>
+            <p> Code-In Online contains a plethora of tasks for participants to complete over two weeks.
+              Create-In contains an online prelimnary round, from which 6 teams will qualify for the onsite event. Participation in both is required for Code-In overall.</p>
+          
+            <a href="#">See more</a>
+           
           </div>
         </center>
         </article>
@@ -74,8 +81,11 @@
           <center>
 
           <div class="text">
-            <h3>Event 1</h3>
-            <p> EH</p>
+            <h3>Hackathon</h3>
+            <p>huihui iss baar nhi krenge shithouse creat-in bolke</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
             </center>
         </article>
@@ -83,8 +93,12 @@
           <center>
 
           <div class="text">
-          <h3>Event 1</h3>
-            <p> EH</p>
+          <h3>Programming</h3>
+            <p>Participants will be required to solve various logical and algorithmic problems and will be tested on their solution’s efficiency as well as validity.
+              This event has an online preliminary round on Hackerrank.</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
         </article>
@@ -92,8 +106,11 @@
           <center>
           </center>
           <div class="text">
-            <h3>Event 1</h3>
+            <h3>Gaming</h3>
             <p> EH</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
         </article>
@@ -101,8 +118,11 @@
           <center>
 
           <div class="text">
-          <h3>Event 1</h3>
+          <h3>Quiz</h3>
             <p> EH</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
         </article>
@@ -110,8 +130,11 @@
           <center>
 
           <div class="text">
-            <h3>Event 1</h3>
+            <h3>Crossword</h3>
             <p> EH</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
         </article>
@@ -119,8 +142,11 @@
           <center>
 
           <div class="text">
-            <h3>Event 1</h3>
+            <h3>Film Making</h3>
             <p> EH</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
         </article>
@@ -128,8 +154,11 @@
           <center>
 
           <div class="text">
-            <h3>Event 1</h3>
+            <h3>Photography</h3>
             <p> EH</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
         </article>
@@ -137,20 +166,65 @@
           <center>
 
           <div class="text">
-            <h3>Event 1</h3>
+            <h3>Surprise</h3>
             <p> EH</p>
+            <div class="see">
+              <a href="#">See more</a>
+             </div>
           </div>
   </center>
+        </article>
+        <article>
+          <center>
+
+          <div class="text">
+            <h3>Audio Mixing</h3>
+
+            <p> Code-In Online contains a plethora of tasks for participants to complete over two weeks.
+              Create-In contains an online prelimnary round, from which 6 teams will qualify for the onsite event. Participation in both is required for Code-In overall.</p>
+          
+            <a href="#">See more</a>
+           
+          </div>
+        </center>
+        </article>
+        <article>
+          <center>
+
+          <div class="text">
+            <h3>Arduino</h3>
+
+            <p> Code-In Online contains a plethora of tasks for participants to complete over two weeks.
+              Create-In contains an online prelimnary round, from which 6 teams will qualify for the onsite event. Participation in both is required for Code-In overall.</p>
+          
+            <a href="#">See more</a>
+           
+          </div>
+        </center>
+        </article>
+        <article>
+          <center>
+
+          <div class="text">
+            <h3>dCrypt</h3>
+
+            <p> Code-In Online contains a plethora of tasks for participants to complete over two weeks.
+              Create-In contains an online prelimnary round, from which 6 teams will qualify for the onsite event. Participation in both is required for Code-In overall.</p>
+          
+            <a href="#">See more</a>
+           
+          </div>
+        </center>
         </article>
       </main>
     </div>
       </center>
     <div class="heading" id="contact">
       <center>
-      <h2>Contact</h2>
+      <h2>Contact Us</h2>
     </center>
     </div>
-    <iframe id="discord "src="https://discord.com/widget?id=754032421057331321&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <iframe id="discord "src="https://discord.com/widget?id=754032421057331321&theme=dark" width="400" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     <div class="contact">
 
       <h4>Address</h4>
@@ -158,11 +232,14 @@
       <h4>Teacher In Charge</h4>
       <p>Mrs. Ruchika Thukral<br>+91-9999398936</p>
       <h4>Email</h4>
-      <p>ncrypt.dpssushantlok@gmail.com</p>
+      <a href="mailto:ncrypt.dpssushantlok@gmail.com">ncrypt.dpssushantlok@gmail.com</a>
 
 
 
 
+    </div>
+    <div class="footer">
+      <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Made with <span style="color: #e74c3c">&hearts;</span> by nCrypt</a>
     </div>
 
 

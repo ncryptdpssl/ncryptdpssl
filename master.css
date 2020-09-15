@@ -34,10 +34,24 @@ header {
 
 .homeimage h1{
   position: absolute;
-  top:7em;
+  top:6em;
   left: 25%;
   font-size: 3.4vw;
   color: white
+}
+.homeimage p{
+  width: 40%;
+  position: absolute;
+  top: 23em;
+  left: 25%;
+  font-size: 1.2vw;
+  color: white
+}
+.homeimage a{
+ 
+  color: #f10000;
+  font-size: 1.2vw;
+  text-decoration: underline;
 }
 .image{
   color:white;
@@ -47,9 +61,10 @@ header {
   height: 40vh;
 }
 .image img{
-  margin-top: 15%;
+  margin-top: 20%;
   padding-bottom: 20%;
-  max-width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
 
 }
 .heading{
@@ -66,9 +81,10 @@ header {
   flex-direction: column;
   float: right;
   margin-right:5%;
-  max-width: 38%;
+  max-width: 35%;
   font-size: 1.2rem;
   padding: 10px;
+  margin-top: 8%;
 }
 .content h2{
   font-size: 4rem;
@@ -80,6 +96,7 @@ header {
   color: white;
   text-align: left;
   margin-top: 40px;
+  font-size: 1.2vw;
 }
 .logo {
   position: relative;
@@ -108,6 +125,7 @@ nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  z-index: 1;
 
 }
 
@@ -146,7 +164,6 @@ nav {
       float:right;
 
 }
-
 #cssmenu>ul>li>a {
   text-decoration: none;
   color: #fff;
@@ -226,6 +243,8 @@ nav {
   transition: all .25s ease
 }
 
+  
+
 #cssmenu ul ul li:hover {}
 
 #cssmenu li:hover>ul {
@@ -250,6 +269,12 @@ nav {
   color: #ddd;
   font-weight: 400;
 }
+#cssmenu ul ul li a.btn {
+  color: #ddd;
+  background-color: #e10000;
+ 
+}
+
 
 #cssmenu ul ul li:last-child>a,
 #cssmenu ul ul li.last-item>a {
@@ -304,6 +329,34 @@ nav {
 #cssmenu>ul ul>li.has-sub>ul>li.active>a {
   border-top: 1px solid #333
 }
+button{
+  background-color: #f10000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20%;
+  margin-left: -20%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.floating {   
+  animation-name: floating; 
+  animation-duration: 3s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+  margin-left: 30px; 
+  margin-top: 5px; 
+} 
+
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  { transform: translate(0, 15px); } 
+  100%   { transform: translate(0, -0px); }     
+} 
 .grid {
   margin-left: 19rem;
   justify-content: center;
@@ -420,10 +473,10 @@ nav {
  .grid1 .text p {
   color: white;
   margin-right: 10%;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   margin-left: 10%;
-  margin-top: 0.6rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -459,6 +512,13 @@ nav {
   color:white;
   font-size: 1.2rem;
 }
+.contact a{
+  margin-top: 1.4rem;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  color:white;
+  font-size: 1.2rem;
+}
 .contact img{
   display: inline-flex;
   flex-direction: row;
@@ -487,11 +547,25 @@ iframe{
 
 
 }
+.not_visible {
+  display: none;
+}
 
 #member{
   display: inline;
 }
-@media screen and (min-width: 1200px){
+.footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: -1;
+  margin-bottom: 2%;
+}
+.footer a{
+  font-size:1rem ;
+  color: white;
+}
+@media screen and (max-width: 1200px){
   .content{
       margin-top: 10%;
   }
@@ -520,14 +594,43 @@ hr{
     display: block;
   }
   .homeimage{
-    margin-top: 20px;
+    float: left;
+    margin-top: 20%;
+    margin-left: 3%;
+  }
+  .homeimage img{
+    display: none;
   }
   html, body{
     overflow-x: hidden;
 
   }
+  .homeimage h1{
+    float: left;
+    font-size: 3rem;
+    position: sticky;
+  }
+  .homeimage p{
+    margin-right:20px;
+    top: 20%;
+    font-size: 1.2rem;
+    left: 3%;
+    width: 95%;
+  }
+  .homeimage a{
+    margin-right:20px;
+    margin-top: -60%;
+    font-size: 1.2rem;
+    left: 3%;
+    width: 100%;
+  }
+  .content h2{
+   font-size: 3rem;
+  }
   .content p{
-    margin-right:10px;
+    margin-right:20px;
+    margin-top: 8px;
+    font-size: 1.2rem;
   }
   .grid1, .grid, .grid2{
     justify-content: center;
@@ -539,11 +642,14 @@ hr{
   }
   iframe {
 
-    margin: 0;
+    margin-right: 15%;
 
     justify-content: center;
 
-    width: 100%;
+    width: 70%;
+  }
+  #cssmenu > ul > li:nth-child(6) > button{
+    display: none;
   }
   .image{
     width: 100%;
@@ -554,7 +660,31 @@ hr{
     padding: 0;
     max-width: 90%;
   }
-  .content, .contact p, .contact h4{
+  .content{
+    max-width:100%;
+    margin:0;
+    margin-bottom: 10px;
+    float:left;
+    margin-top: -10%;
+  }
+  .grid1 .text p {
+    color: white;
+    margin-right: 10%;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  button{
+    margin-left: 1%;
+    margin-top: 70%;
+  }
+  .not_visible {
+    display: inline;
+}    
+  .contact p, .contact h4{
     max-width:100%;
     margin:0;
     margin-bottom: 10px;
@@ -563,11 +693,17 @@ hr{
   .contact h4{
     margin-top: 1rem;
   }
-  .contact p{
+  .contact p .contact a{
     margin-bottom: 1rem;
   }
+  .contact a{
+    margin: 0;
+    margin-bottom: 10%;
+  }
+  
 }
 
+}
 @media screen and (min-width: 901px) {
   #cssmenu ul{
     display:block !important;
@@ -579,6 +715,7 @@ hr{
 
   .contact{
     font-size: 1.3rem;
+    margin-left: 3%;
   }
   .content{
     font-size: 1.3rem;
