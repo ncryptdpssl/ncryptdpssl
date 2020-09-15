@@ -164,6 +164,7 @@ nav {
       float:right;
 
 }
+
 #cssmenu>ul>li>a {
   text-decoration: none;
   color: #fff;
@@ -375,6 +376,7 @@ button{
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 3rem;
   align-items: center;
+  margin-bottom: 2%;
 }
 .grid2 >article{
   height: 100%;
