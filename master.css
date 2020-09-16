@@ -17,9 +17,9 @@ body {
 }
 
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
-
+  z-index: 10;
   background-color: #1a1a1a;
 
   box-shadow: 5px 4px 10px 2px #191919;
@@ -41,15 +41,16 @@ header {
 .homeimage p{
   width: 40%;
   position: absolute;
-  top: 23em;
-  left: 25%;
-  font-size: 1.2vw;
+  top: 65%;
+  left: 28%;
+  text-align: center;
+  font-size: 1.3vw;
   color: white
 }
 .homeimage a{
  
   color: #f10000;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-decoration: underline;
 }
 .image{
@@ -161,7 +162,14 @@ nav {
       -webkit-transform: rotate(-180deg);
       transform: rotate(-180deg);
       float:right;
+      max-width: 15%;
 
+}
+#cssmenu > ul > li:nth-child(5){
+  margin-right: 3%;
+}
+.butt{
+  margin-right: 7%!important;
 }
 
 #cssmenu>ul>li>a {
@@ -342,6 +350,7 @@ button{
   margin-left: -20%;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 0 0 15px #f10000;
 }
 
 
@@ -606,10 +615,11 @@ hr{
   }
   .homeimage p{
     margin-right:20px;
-    top: 20%;
+    top: 22%;
     font-size: 1.2rem;
     left: 3%;
     width: 95%;
+    text-align: left;
   }
   .homeimage a{
     margin-right:20px;
