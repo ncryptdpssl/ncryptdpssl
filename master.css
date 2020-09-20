@@ -111,7 +111,21 @@ nav {
   margin: 0 auto;
 
 }
-
+.hacktoberfest{
+  max-width: 35vw;
+  margin-left: 10%;
+  color: #fff;
+  margin-bottom: 5%;
+}
+.hactoberfestimg{
+  max-width: 30vw;
+  float: right;
+  width: 100%;
+  padding: 0 20px 20px 0;
+}
+.hackcommon{
+  display: inline-block;
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
