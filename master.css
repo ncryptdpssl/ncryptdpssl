@@ -176,6 +176,7 @@ nav {
       -webkit-transform: rotate(-180deg);
       transform: rotate(-180deg);
       float:right;
+      max-width: 15%;
 
 }
 #cssmenu > ul > li:nth-child(5){
@@ -627,6 +628,10 @@ iframe{
   margin-top: 2rem;
   margin-left: 10%;
   text-align: left;
+}
+#cssmenu>ul>li {
+      max-width: 15%;
+
 }
   .hack .content,.hack img{
 display:block;
