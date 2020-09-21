@@ -458,7 +458,8 @@ button{
 }
 
 .grid1 > article {
-  height: 350px;;
+  min-height: 350px;
+  padding:20px 0px;
   border: 1px solid #1a1a1a;
   background-color: #1a1a1a;
   border-radius: 25px;
@@ -590,9 +591,51 @@ iframe{
   .content{
       margin-top: 10%;
   }
+  .hack .content{
+    margin-top:0%
+  }
+}
+.hack img{
+  float:right;
+  width:50vw;
+  margin-right: 5%;
+}
+.hack {
+  padding:5vh 0%
+}
+@media screen and (min-width: 1400px){
+  .hack{
+    padding:10vh 0px
+  }
+}
+.hack h2{
+  margin-top:0px
+}
+.hack .content {
+    display: block;
+    float: none;
+    margin-left: 5%;
+    max-width: 35%;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 8%;
 }
 @media screen and (max-width: 1000px){
-
+  .grid1 .text h3 {
+  margin:0;
+  font-size: 8vw;
+  color:#fff;
+  margin-top: 2rem;
+  margin-left: 10%;
+  text-align: left;
+}
+  .hack .content,.hack img{
+display:block;
+width: 100vw;
+float:none;
+max-width:90%;
+margin-left: 5%;
+  }
   .grid2, .grid, .grid1{
 
     margin-left: 0;
@@ -694,7 +737,7 @@ hr{
   .grid1 .text p {
     color: white;
     margin-right: 10%;
-    font-size: 1rem;
+    font-size: 4.5vw;
     font-weight: 400;
     margin-left: 10%;
     margin-top: 2rem;
