@@ -639,7 +639,7 @@ iframe{
   text-align: left;
 }
 #cssmenu>ul>li {
-      max-width: 15%;
+      max-width: 100%;
 
 }
   .hack .content,.hack img{
