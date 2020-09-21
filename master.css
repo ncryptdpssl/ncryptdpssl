@@ -17,9 +17,9 @@ body {
 }
 
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
-
+  z-index: 10;
   background-color: #1a1a1a;
 
   box-shadow: 5px 4px 10px 2px #191919;
@@ -29,15 +29,29 @@ header {
   max-width: 100%;
   max-height: 20%;
   z-index: -1;
-  background-color: #1f1f1f;
 }
 
 .homeimage h1{
   position: absolute;
-  top:7em;
+  top:6em;
   left: 25%;
   font-size: 3.4vw;
   color: white
+}
+.homeimage p{
+  width: 40%;
+  position: absolute;
+  top: 65%;
+  left: 28%;
+  text-align: center;
+  font-size: 1.3vw;
+  color: white
+}
+.homeimage a{
+ 
+  color: #f10000;
+  font-size: 1.3vw;
+  text-decoration: underline;
 }
 .image{
   color:white;
@@ -47,9 +61,10 @@ header {
   height: 40vh;
 }
 .image img{
-  margin-top: 15%;
+  margin-top: 20%;
   padding-bottom: 20%;
-  max-width: 100%;
+  max-width: 80%;
+  margin-left: 10%;
 
 }
 .heading{
@@ -58,7 +73,7 @@ header {
   color: white;
 }
 .about{
-  background-color: #181818;
+  background-color: #1d1d1d;
 }
 .content{
 
@@ -66,9 +81,10 @@ header {
   flex-direction: column;
   float: right;
   margin-right:5%;
-  max-width: 38%;
+  max-width: 35%;
   font-size: 1.2rem;
   padding: 10px;
+  margin-top: 8%;
 }
 .content h2{
   font-size: 4rem;
@@ -80,6 +96,7 @@ header {
   color: white;
   text-align: left;
   margin-top: 40px;
+  font-size: 1.2vw;
 }
 .logo {
   position: relative;
@@ -94,7 +111,21 @@ nav {
   margin: 0 auto;
 
 }
-
+.hacktoberfest{
+  max-width: 35vw;
+  margin-left: 10%;
+  color: #fff;
+  margin-bottom: 5%;
+}
+.hactoberfestimg{
+  max-width: 30vw;
+  float: right;
+  width: 100%;
+  padding: 0 20px 20px 0;
+}
+.hackcommon{
+  display: inline-block;
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -108,6 +139,7 @@ nav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  z-index: 1;
 
 }
 
@@ -144,9 +176,20 @@ nav {
       -webkit-transform: rotate(-180deg);
       transform: rotate(-180deg);
       float:right;
+      max-width: 15%;
 
 }
-
+#cssmenu > ul > li:nth-child(5){
+  margin-right: 3%;
+}
+.butt{
+  margin-right: 7%!important;
+}
+#cssmenu>ul>li>button:hover,
+#cssmenu>ul>li>button:focus {
+  transform: translateY(-0.25em);
+  transition: .25s cubic-bezier(0, 0, 0.73, 0.64);
+}
 #cssmenu>ul>li>a {
   text-decoration: none;
   color: #fff;
@@ -226,6 +269,8 @@ nav {
   transition: all .25s ease
 }
 
+  
+
 #cssmenu ul ul li:hover {}
 
 #cssmenu li:hover>ul {
@@ -250,6 +295,12 @@ nav {
   color: #ddd;
   font-weight: 400;
 }
+#cssmenu ul ul li a.btn {
+  color: #ddd;
+  background-color: #e10000;
+ 
+}
+
 
 #cssmenu ul ul li:last-child>a,
 #cssmenu ul ul li.last-item>a {
@@ -304,6 +355,23 @@ nav {
 #cssmenu>ul ul>li.has-sub>ul>li.active>a {
   border-top: 1px solid #333
 }
+button{
+  background-color: #f10000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20%;
+  margin-left: -20%;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #f10000;
+}
+
+
 .grid {
   margin-left: 19rem;
   justify-content: center;
@@ -322,6 +390,7 @@ nav {
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 3rem;
   align-items: center;
+  margin-bottom: 2%;
 }
 .grid2 >article{
   height: 100%;
@@ -385,14 +454,15 @@ nav {
   grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 3rem;
   align-items: stretch;
+  margin-bottom: 2%;
 }
 
 .grid1 > article {
-  height: 350px;;
+  min-height: 350px;
+  padding:20px 0px;
   border: 1px solid #1a1a1a;
   background-color: #1a1a1a;
   border-radius: 25px;
-  box-shadow: 3px 2px 6px 0px #191919;
 }
 
 .grid1 > article img {
@@ -402,8 +472,9 @@ nav {
 
 
 }
-.see a{
-
+.grid1 > article:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+  transition: all 0.7s cubic-bezier(.25,.8,.25,1);
 }
 .grid1 .text{
     display: block;
@@ -420,18 +491,18 @@ nav {
  .grid1 .text p {
   color: white;
   margin-right: 10%;
-  font-size: 18px;
+  font-size: 1vw;
   font-weight: 400;
   margin-left: 10%;
-  margin-top: 0.6rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: left;
 }
 .grid1 .text a{
-  margin-right: 2rem;
+  /* margin-right: 2rem;
+  
+  float: right; */
   color:red;
-  float: right;
-
 
 }
 .label{
@@ -443,23 +514,34 @@ nav {
   content:'Secretary';
 }
 .contact{
+  background-color: #1d1d1d;
+}
+.contactinfo{
   display: inline-flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 3%;
 }
-.contact h4{
+.contactinfo h4{
   margin-left: 10rem;
     color: red;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
-.contact p{
-  margin-top: 1.4rem;
+.contactinfo p{
+  margin-top: 0.5rem;
   margin-left: 10rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   color:white;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
-.contact img{
+.contactinfo a{
+  margin-top: 0.5rem;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+  color:white;
+  font-size: 1rem;
+}
+.contactinfo img{
   display: inline-flex;
   flex-direction: row;
   margin-left: 1rem;
@@ -468,7 +550,7 @@ nav {
 iframe{
   float: right;
   margin-right: 10rem;
-  margin-bottom: 3rem;
+  margin-top: 3%;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -487,17 +569,77 @@ iframe{
 
 
 }
+.not_visible {
+  display: none;
+}
 
 #member{
   display: inline;
 }
-@media screen and (min-width: 1200px){
+.footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: -1;
+  background-color: #1d1d1d;
+}
+.footer a{
+  font-size:1rem ;
+  color: white;
+}
+@media screen and (max-width: 1200px){
   .content{
       margin-top: 10%;
   }
+  .hack .content{
+    margin-top:0%
+  }
+}
+.hack img{
+  float:right;
+  width:50vw;
+  margin-right: 5%;
+}
+.hack {
+  padding:5vh 0%
+}
+@media screen and (min-width: 1400px){
+  .hack{
+    padding:10vh 0px
+  }
+}
+.hack h2{
+  margin-top:0px
+}
+.hack .content {
+    display: block;
+    float: none;
+    margin-left: 5%;
+    max-width: 35%;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 8%;
 }
 @media screen and (max-width: 1000px){
+  .grid1 .text h3 {
+  margin:0;
+  font-size: 8vw;
+  color:#fff;
+  margin-top: 2rem;
+  margin-left: 10%;
+  text-align: left;
+}
+#cssmenu>ul>li {
+      max-width: 15%;
 
+}
+  .hack .content,.hack img{
+display:block;
+width: 100vw;
+float:none;
+max-width:90%;
+margin-left: 5%;
+  }
   .grid2, .grid, .grid1{
 
     margin-left: 0;
@@ -520,18 +662,49 @@ hr{
     display: block;
   }
   .homeimage{
-    margin-top: 20px;
+    float: left;
+    margin-top: 20%;
+    margin-left: 3%;
+  }
+  .homeimage img{
+    display: none;
   }
   html, body{
     overflow-x: hidden;
 
   }
+  .homeimage h1{
+    float: left;
+    font-size: 3rem;
+    position: sticky;
+  }
+  .homeimage p{
+    margin-right:20px;
+    top: 22%;
+    font-size: 1.2rem;
+    left: 3%;
+    width: 95%;
+    text-align: left;
+  }
+  .homeimage a{
+    margin-right:20px;
+    margin-top: -60%;
+    font-size: 1.2rem;
+    left: 3%;
+    width: 100%;
+  }
+  .content h2{
+   font-size: 3rem;
+  }
   .content p{
-    margin-right:10px;
+    margin-right:20px;
+    margin-top: 8px;
+    font-size: 1.2rem;
   }
   .grid1, .grid, .grid2{
     justify-content: center;
     margin: 0;
+    margin-bottom: 5%;
   }
   .grid1 article, .grid article, .grid2 article{
     width:100%;
@@ -539,11 +712,15 @@ hr{
   }
   iframe {
 
-    margin: 0;
+    margin-right: 15%;
 
     justify-content: center;
 
-    width: 100%;
+    width: 70%;
+    margin-top: 5%;
+  }
+  #cssmenu > ul > li:nth-child(6) > button{
+    display: none;
   }
   .image{
     width: 100%;
@@ -554,20 +731,50 @@ hr{
     padding: 0;
     max-width: 90%;
   }
-  .content, .contact p, .contact h4{
+  .content{
+    max-width:100%;
+    margin:0;
+    margin-bottom: 10px;
+    float:left;
+    margin-top: -10%;
+  }
+  .grid1 .text p {
+    color: white;
+    margin-right: 10%;
+    font-size: 4.5vw;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  button{
+    margin-left: 1%;
+    margin-top: 70%;
+  }
+  .not_visible {
+    display: inline;
+}    
+  .contactinfo p, .contactinfo h4{
     max-width:100%;
     margin:0;
     margin-bottom: 10px;
     float:left;
   }
-  .contact h4{
+  .contactinfo h4{
     margin-top: 1rem;
   }
-  .contact p{
+  .contactinfo p .contactinfo a{
     margin-bottom: 1rem;
   }
+  .contactinfo a{
+    margin: 0;
+    margin-bottom: 10%;
+  }
+  
 }
 
+}
 @media screen and (min-width: 901px) {
   #cssmenu ul{
     display:block !important;
@@ -577,8 +784,9 @@ hr{
 @media screen and (max-width:900px) {
 
 
-  .contact{
+  .contactinfo{
     font-size: 1.3rem;
+    margin-left: 3%;
   }
   .content{
     font-size: 1.3rem;
